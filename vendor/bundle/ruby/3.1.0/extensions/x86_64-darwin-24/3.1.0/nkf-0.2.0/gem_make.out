@@ -1,0 +1,16 @@
+current directory: /Users/harisharasu/Documents/AwesomeProject/vendor/bundle/ruby/3.1.0/gems/nkf-0.2.0/ext/nkf
+/Users/harisharasu/.rbenv/versions/3.1.4/bin/ruby -I /Users/harisharasu/.rbenv/versions/3.1.4/lib/ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /Users/harisharasu/Documents/AwesomeProject/vendor/bundle/ruby/3.1.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250314-19945-b9qx7n sitelibdir\=./.gem.20250314-19945-b9qx7n clean
+
+current directory: /Users/harisharasu/Documents/AwesomeProject/vendor/bundle/ruby/3.1.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250314-19945-b9qx7n sitelibdir\=./.gem.20250314-19945-b9qx7n
+compiling nkf.c
+linking shared-object nkf.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.1'
+
+current directory: /Users/harisharasu/Documents/AwesomeProject/vendor/bundle/ruby/3.1.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250314-19945-b9qx7n sitelibdir\=./.gem.20250314-19945-b9qx7n install
+/opt/local/bin/ginstall -c -m 0755 nkf.bundle ./.gem.20250314-19945-b9qx7n
