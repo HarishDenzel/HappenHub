@@ -17,7 +17,7 @@ const LoginScreen = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigation = useNavigation<LoginScreenNavProp>();
-  const { login } = useAuth(); // ✅ use context login
+  const { login } = useAuth(); 
 
   const handleLogin = async () => {
     const success = await login(email, password);

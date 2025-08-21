@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, Alert,TouchableOpacity } from "react-native";
 import { useTranslation } from "react-i18next";
-import { changeAppLanguage } from "../i18n/i18n"; // adjust path
+import { changeAppLanguage } from "../i18n/i18n"; 
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { useAuth } from "../utils/context/AuthContext";
 import { useNavigation } from "@react-navigation/native";

@@ -1,4 +1,3 @@
-// src/screens/FavoritesScreen.tsx
 import React, { useEffect, useState } from "react";
 import { View, Text, FlatList, StyleSheet, TouchableOpacity } from "react-native";
 import EventCard from "../components/EventCard";

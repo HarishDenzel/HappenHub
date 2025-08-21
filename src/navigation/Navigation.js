@@ -12,12 +12,7 @@ import FavoritesScreen from '../screens/FavoritesScreen';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import {useTranslation} from 'react-i18next';
 
-// export type RootStackParamList = {
-//   Splash: undefined;
-//   Login: undefined;
-//   MainTabs: undefined;
-//   EventDetails: { eventId: string };
-// };
+
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();

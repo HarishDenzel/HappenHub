@@ -5,7 +5,7 @@ const FavoritesContext = createContext<any>(null);
 
 export const FavoritesProvider = ({ children }) => {
   const [favorites, setFavorites] = useState<any[]>([]);
-console.log('s==>',favorites)
+
   useEffect(() => {
     loadFavorites();
   }, []);

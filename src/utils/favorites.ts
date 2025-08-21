@@ -22,7 +22,6 @@ export const saveFavorites = async (favorites: any[]) => {
 };
 
 export const addFavorite = async (event: any) => {
-  console.log('a==>',event)
   const favorites = await getFavorites();
   if (!favorites.find((e) => e.id === event.id)) {
     favorites.push(event);

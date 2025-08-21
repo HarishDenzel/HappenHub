@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, Image, StyleSheet, ScrollView, Dimensions, Platform } from "react-native";
-import MapView, { Marker ,PROVIDER_GOOGLE} from "react-native-maps";
+import MapView, { Marker, PROVIDER_GOOGLE } from "react-native-maps";
 import { RouteProp, useRoute } from "@react-navigation/native";
-import { getEventById,  } from "../services/ticketmaster";
+import { getEventById, } from "../services/ticketmaster";
 
 export default function EventDetailsScreen() {
   const route = useRoute<RouteProp<any>>();
@@ -11,7 +11,7 @@ export default function EventDetailsScreen() {
   useEffect(() => {
     const fetchEvent = async () => {
       const res = await getEventById(eventId);
-      console.log("==>", res);
+
       setEvent(res);
     };
     fetchEvent();

@@ -18,7 +18,7 @@ const SignupScreen = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigation = useNavigation<SignupNavProp>();
-  const { signup } = useAuth(); // ✅ use signup from context
+  const { signup } = useAuth(); 
 
   const handleSignup = async () => {
     if (!name || !email || !password) {
@@ -29,7 +29,7 @@ const SignupScreen = () => {
     const success = await signup(name, email, password);
     if (success) {
       Alert.alert("Success", "Account created successfully");
-      navigation.replace("MainTabs"); // Navigate to main app after signup
+      navigation.replace("MainTabs"); 
     } else {
       Alert.alert("Error", "Something went wrong. Try again.");
     }

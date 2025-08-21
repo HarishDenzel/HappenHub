@@ -24,7 +24,7 @@ const SplashScreen = () => {
         } else {
           navigation.replace("Login");
         }
-      }, 1500); // splash delay
+      }, 1500); 
     };
     checkAuth();
   }, [navigation]);

@@ -18,7 +18,6 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<User>(null);
   const [loading, setLoading] = useState(true);
 
-  // Load user from AsyncStorage on app start
   useEffect(() => {
     const loadUser = async () => {
       try {
@@ -37,7 +36,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const login = async (email: string, password: string) => {
     try {
       const storedData = await AsyncStorage.getItem("userData");
-      if (!storedData) return false; // no signup done yet
+      if (!storedData) return false; 
 
       const { name, userEmail, userPassword } = JSON.parse(storedData);
       if (email === userEmail && password === userPassword) {
