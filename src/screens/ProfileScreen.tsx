@@ -7,7 +7,7 @@ import { useAuth } from "../utils/context/AuthContext";
 import { useNavigation } from "@react-navigation/native";
 
 export default function ProfileScreen() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 const{user,logout}=useAuth()
   const navigation = useNavigation();
   const switchLanguage = async (lang: "en" | "ar") => {

@@ -67,7 +67,6 @@ export default function HomeScreen() {
         renderItem={({ item }) => (
           <EventCard
             event={item}
-            isFavorite={favorites.some(f => f.id === item.id)}
             onPress={() =>
               navigation.navigate("EventDetails", { eventId: item.id })
             }
