@@ -1,4 +1,4 @@
-// src/components/EventCard.tsx
+
 import React, { useContext } from "react";
 import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 import Ionicons from "react-native-vector-icons/Ionicons";
@@ -7,7 +7,7 @@ import { useFavorites } from "../utils/context/FavoritesContext";
 export default function EventCard({ event, onPress }) {
   const { favorites, addFavorite, removeFavorite } = useFavorites();
 
-  // check if this event is in favorites
+
   const liked = favorites.some((e) => e.id === event.id);
 
   const handleLike = () => {

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { View, Text, FlatList, StyleSheet, TouchableOpacity } from "react-native";
 import EventCard from "../components/EventCard";
-import { getFavorites } from "../utils/favorites";
 import { useFavorites } from "../utils/context/FavoritesContext";
 
 export default function FavoritesScreen({ navigation }) {

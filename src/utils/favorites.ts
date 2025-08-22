@@ -1,4 +1,3 @@
-// src/utils/favorites.ts
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const FAVORITES_KEY = "FAVORITES";
